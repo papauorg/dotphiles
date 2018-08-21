@@ -9,8 +9,8 @@
 
 # Global Config
 [user]
-    #name = "**Your Name**"
-    #email = "**Your Email**"
+    name = "Philipp Grathwohl"
+    email = "github@papau.org"
     #signingkey = **Your GPG ID**
 
 [branch "master"]
@@ -78,6 +78,7 @@
     # checkout
     co  = checkout
     co0 = checkout HEAD --
+    coma = checkout master
     # fetch
     f   = fetch
     fm  = pull
@@ -96,6 +97,7 @@
     ri  = rebase --interactive
     rs  = rebase --skip
     rom = rebase origin/master
+    rema = !"git checkout master; git pull; git co -; git rebase master"
 
     # commit
     c      = commit -v
@@ -116,6 +118,7 @@
 
     # index
     s  = status
+    st = status
     a  = add
     ia = add
     ir = reset
@@ -139,6 +142,7 @@
     rea = remote add
     rex = remote rm
     rem = remote rename
+    rclean = remote prune origin
 
 [push]
     default = matching

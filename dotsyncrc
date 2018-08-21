@@ -24,15 +24,20 @@ dotsyncrc
 #ctags/ctags
 #cmus
 #curl/curlrc
-#git/gitconfig
-#git/gitignore
-#git/gitattributes
+git/gitconfig
+git/gitignore
+git/gitattributes
 #git/tigrc
 #git/gitk
 #gnupg
 #grc
 #input/editrc
 #input/inputrc
+i3/config:.config/i3/config
+i3/i3blocks.conf:.config/i3/i3blocks.conf
+i3/customlock:.config/i3/customlock
+i3/lock_icon.png:.config/i3/lock_icon.png
+i3/xrandr_with_monitor_left.sh:.config/i3/xrandr_with_monitor_left.sh
 #irssi
 #mpd/mpd.conf
 #mercurial/hgrc
@@ -46,6 +51,7 @@ dotsyncrc
 #postgresql/psqlrc
 #python/pythonrc
 #python/pylintrc
+rofi/config:.config/rofi/config
 #rpm/rpmmacros
 #ruby/irbrc
 #ruby/pryrc
@@ -63,9 +69,9 @@ dotsyncrc
 #task/taskrc
 #tmux/tmux.conf
 #tmux/tmuxinator
-#vim/dotvim:.vim
-#vim/vimrc
-#vim/gvimrc
+vim/dotvim:.vim
+vim/vimrc
+vim/gvimrc
 #wget/wgetrc
 #zsh/fasdrc
 #zsh/dotzsh:.zsh
@@ -88,5 +94,6 @@ dotsyncrc
 #host7.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
+dunwyn				 git=ANY
 [endhosts]
 
