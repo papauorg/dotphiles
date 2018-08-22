@@ -73,6 +73,7 @@
     bM = branch -M
     bs = show-branch
     bS = show-branch -a
+    br = branch
 
     # checkout/fetch/merge/push/rebase
     # checkout
