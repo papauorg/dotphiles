@@ -91,14 +91,15 @@
     p   = push
     pa  = push --all
     pt  = push --tags
+	pu = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     # rebase
     r   = rebase
     ra  = rebase --abort
-    rc  = rebase --continue
+	rc = !git clean -f && git rebase --continue
     ri  = rebase --interactive
     rs  = rebase --skip
     rom = rebase origin/master
-    rema = !"git checkout master; git pull; git co -; git rebase master"
+	rema = !git checkout master && git pull && git co - && git rebase master
 
     # commit
     c      = commit -v
@@ -144,6 +145,10 @@
     rex = remote rm
     rem = remote rename
     rclean = remote prune origin
+	getbaseurl = !git remote get-url origin | sed -r \"s/git@(.+?):(.+?)\\\\.git/https:\\\\/\\\\/\\1\\\\/\\\\2/\"
+	getpullrequesturl = !echo \"$(git getbaseurl)$(git config $(git config pullrequesturls.default))\"
+	replacebranches = !git getpullrequesturl | sed 's,$branch,'\"$(git rev-parse --abbrev-ref HEAD)\"'', | sed 's,$base,master,'
+	pr = !sensible-browser $(git replacebranches)
 
 [push]
     default = matching
@@ -151,3 +156,7 @@
 [url "git@github.com:"]
     insteadof = github:
 
+[pullrequesturls]
+	github = /compare/$base...$branch?expand=1
+	gitlab = /merge_requests/new?merge_request[source_branch]=$branch&merge_request[target_branch]=$base
+	default = pullrequesturls.github

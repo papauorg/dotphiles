@@ -226,7 +226,7 @@ bindsym $sup+e exec nautilus
 
 # Wallpaper
 # install feh package
-exec_always feh --bg-scale /home/tuxford/Bilder/Wallpapers/Firefox_wallpaper.png
+exec_always feh --bg-scale /home/tuxford/Bilder/Wallpapers/Firefox_wallpaper.jpg
 
 # Monitors
 # install arandr package and extract the xrandr command paste it here
