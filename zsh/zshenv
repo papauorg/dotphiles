@@ -17,4 +17,4 @@ export DOTZSH="$HOME/.zsh"
 source "$DOTZSH/env.zsh"
 
 # Customize to your needs...
-
+DOTNET_CLI_TELEMETRY_OPTOUT=1

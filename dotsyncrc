@@ -74,13 +74,13 @@ vim/dotvim:.vim
 vim/vimrc
 vim/gvimrc
 #wget/wgetrc
-#zsh/fasdrc
-#zsh/dotzsh:.zsh
-#zsh/zlogin
-#zsh/zlogout
-#zsh/zprofile
-#zsh/zshenv
-#zsh/zshrc
+zsh/fasdrc
+zsh/dotzsh:.zsh
+zsh/zlogin
+zsh/zlogout
+zsh/zprofile
+zsh/zshenv
+zsh/zshrc:.zshrc
 [endfiles]
 
 # Hosts to sync

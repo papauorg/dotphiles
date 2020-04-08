@@ -160,3 +160,5 @@
 	github = /compare/$base...$branch?expand=1
 	gitlab = /merge_requests/new?merge_request[source_branch]=$branch&merge_request[target_branch]=$base
 	default = pullrequesturls.github
+[interactive]
+	singleKey = true
