@@ -111,4 +111,4 @@ zstyle ':dotzsh:module:theme' theme 'dotphiles'
 source "$DOTZSH/init.zsh"
 
 ### Customize to your needs...
-
+source "$HOME/.dotfiles/z/z.sh"
