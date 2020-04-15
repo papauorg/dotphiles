@@ -73,6 +73,7 @@ rofi/config:.config/rofi/config
 vim/dotvim:.vim
 vim/vimrc
 vim/gvimrc
+vscode/settings.json:.config/Code/User/settings.json
 #wget/wgetrc
 zsh/fasdrc
 zsh/dotzsh:.zsh
