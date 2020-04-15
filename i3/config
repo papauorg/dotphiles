@@ -226,14 +226,13 @@ bindsym $sup+e exec nautilus
 
 # Wallpaper
 # install feh package
-exec_always feh --bg-scale /home/tuxford/Bilder/Wallpapers/Firefox_wallpaper.jpg
+exec_always feh --bg-scale /usr/share/backgrounds/Origin_of_nature_by_Julian_Tomasini.jpg
 
 # Monitors
 # install arandr package and extract the xrandr command paste it here
 exec_always ~/.config/i3/xrandr_with_monitor_left.sh
 
 # Start compton for opacity
-exec compton -f 
+exec compton -f
 exec --no-startup-id nm-applet
-exec --no-startup-id owncloud
 exec --no-startup-id numlockx on
