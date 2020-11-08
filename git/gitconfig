@@ -80,6 +80,7 @@
     co  = checkout
     co0 = checkout HEAD --
     coma = checkout master
+    comai = checkout main
     # fetch
     f   = fetch
     fm  = pull
@@ -100,6 +101,7 @@
     rs  = rebase --skip
     rom = rebase origin/master
 	rema = !git checkout master && git pull && git co - && git rebase master
+    remai = !git checkout main && git pull && git co - && git rebase main
 
     # commit
     c      = commit -v
@@ -161,4 +163,4 @@
 	gitlab = /merge_requests/new?merge_request[source_branch]=$branch&merge_request[target_branch]=$base
 	default = pullrequesturls.github
 [interactive]
-	singleKey = true
+	singleKey = 1
