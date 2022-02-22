@@ -51,6 +51,7 @@
 [core]
     pager = less -FRSX
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    editor = vi
 
 [diff]
     tool = vimdiff
@@ -151,6 +152,7 @@
 	getpullrequesturl = !echo \"$(git getbaseurl)$(git config $(git config pullrequesturls.default))\"
 	replacebranches = !git getpullrequesturl | sed 's,$branch,'\"$(git rev-parse --abbrev-ref HEAD)\"'', | sed 's,$base,master,'
 	pr = !sensible-browser $(git replacebranches)
+	append = commit --amend --no-edit
 
 [push]
     default = matching
@@ -163,4 +165,6 @@
 	gitlab = /merge_requests/new?merge_request[source_branch]=$branch&merge_request[target_branch]=$base
 	default = pullrequesturls.github
 [interactive]
-	singleKey = 1
+	singlekey = true
+[pull]
+	rebase = true
