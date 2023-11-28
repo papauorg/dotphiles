@@ -25,7 +25,6 @@
             ]
         }
     ],
-    "window.zoomLevel": -1,
     "editor.fontFamily": "'Fira Code Retina', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
     "[html]": {
@@ -39,5 +38,16 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "editor.renderWhitespace": "all",
-    "workbench.tree.indent": 20
+    "workbench.tree.indent": 20,
+    "coverage-gutters.coverageFileNames": [
+        "lcov.info",
+        "cov.xml",
+        "coverage.xml",
+        "jacoco.xml",
+        "coverage.cobertura.xml"
+    ],
+    "omnisharp.enableRoslynAnalyzers": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.zoomLevel": -1,
+    "explorer.confirmDragAndDrop": false,
 }

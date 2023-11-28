@@ -153,6 +153,7 @@
 	replacebranches = !git getpullrequesturl | sed 's,$branch,'\"$(git rev-parse --abbrev-ref HEAD)\"'', | sed 's,$base,master,'
 	pr = !sensible-browser $(git replacebranches)
 	append = commit --amend --no-edit
+	pfl = push --force-with-lease
 
 [push]
     default = matching
