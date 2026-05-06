@@ -1,53 +1,81 @@
 {
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-    "workbench.colorTheme": "Default Dark+",
-    "workbench.colorCustomizations": {
-        "tab.activeBorder": "#4fc3f7",
-
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "workbench.colorTheme": "Dark+",
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#4fc3f7",
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsicons.dontShowNewVersionMessage": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": false,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"],
     },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "vsicons.dontShowNewVersionMessage": true,
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "editor.fontFamily": "'Fira Code Retina', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "explorer.confirmDelete": false,
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "editor.renderWhitespace": "all",
-    "workbench.tree.indent": 20,
-    "coverage-gutters.coverageFileNames": [
-        "lcov.info",
-        "cov.xml",
-        "coverage.xml",
-        "jacoco.xml",
-        "coverage.cobertura.xml"
-    ],
-    "omnisharp.enableRoslynAnalyzers": true,
+  ],
+  "editor.fontFamily": "'Fira Code Retina', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+  },
+  "explorer.confirmDelete": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "editor.renderWhitespace": "all",
+  "workbench.tree.indent": 20,
+  "coverage-gutters.coverageFileNames": [
+    "lcov.info",
+    "cov.xml",
+    "coverage.xml",
+    "jacoco.xml",
+    "coverage.cobertura.xml",
+  ],
+  "omnisharp.enableRoslynAnalyzers": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.zoomLevel": -1,
+  "explorer.confirmDragAndDrop": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "svg.preview.transparencyGrid": true,
+  "svg.preview.boundingBox": true,
+  "dotnet.server.useOmnisharp": true,
+  "omnisharp.projectLoadTimeout": 120,
+  "vim.camelCaseMotion.enable": true,
+  "cSpell.language": "en,de-DE",
+  "dev.containers.mountWaylandSocket": false,
+  "dev.containers.forwardWSLServices": false,
+  "redhat.telemetry.enabled": false,
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "opus",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "[yaml]": {
     "diffEditor.ignoreTrimWhitespace": false,
-    "window.zoomLevel": -1,
-    "explorer.confirmDragAndDrop": false,
+  },
+  "diffEditor.renderSideBySide": false,
+  "chat.tools.urls.autoApprove": {
+    "https://code.visualstudio.com": true,
+    "https://github.com/microsoft/vscode/wiki/*": true,
+    "https://artifacthub.io": {
+      "approveRequest": false,
+      "approveResponse": true,
+    },
+    "https://raw.githubusercontent.com": {
+      "approveRequest": false,
+      "approveResponse": true,
+    },
+    "https://wg-easy.github.io": {
+      "approveRequest": true,
+      "approveResponse": false,
+    },
+  },
 }

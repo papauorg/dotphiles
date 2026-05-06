@@ -26,3 +26,5 @@ endif
 
 " Customize to your needs...
 :imap jj <Esc>
+
+let g:dotvim_colorscheme = 'default'
